@@ -1,17 +1,26 @@
 #include <stdio.h>
 
+#define linha 10
+#define coluna 10
+
 int main() {
     
-    int tabuleiro[10][10];
+   int tabuleiro [linha] [coluna];
+   int soma = 0;
 
-    for ( int i = 0; i < 10; i++){
-        printf("0 ");
-            printf("\n");
-            for ( int j = 0; j < 10; j++){
-        printf("0 ");
-        }
+   for (int i = 0; i < linha; ++i){
+        for(int j = 0; j < coluna; ++j){
+            
+        tabuleiro [i][j] = soma;
+        printf ("%d ", tabuleiro[i][j]);
+
+        tabuleiro [1][1] = 40;
     }
+    printf("\n");
 
+    }
+   
+    printf(" teste %d ", tabuleiro [1][1]);
 
     return 0;
 }
