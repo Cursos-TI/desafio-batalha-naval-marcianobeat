@@ -10,11 +10,13 @@ int main() {
 
    for (int i = 0; i < linha; ++i){
         for(int j = 0; j < coluna; ++j){
-            
-        tabuleiro [i][j] = soma;
-        printf ("%d ", tabuleiro[i][j]);
 
-        tabuleiro [1][1] = 40;
+        tabuleiro [i][j] = soma;
+        tabuleiro [1][1] = 3;
+        printf ("%d ", tabuleiro[i][j]);
+        
+
+       
     }
     printf("\n");
 
